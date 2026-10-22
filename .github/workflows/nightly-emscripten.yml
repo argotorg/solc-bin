@@ -29,7 +29,7 @@ jobs:
           sudo chown "$USER" /mnt/solc-bin/
           ln -s /mnt/solc-bin/ solc-bin
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
         with:
           repository: 'argotorg/solidity'
           ref: 'develop'
@@ -80,7 +80,7 @@ jobs:
 
       - name: Upload soljson.js as an artifact
         if: "env.NIGHTLY_ALREADY_EXISTS == 'false'"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: soljson.js
           path: solidity/upload/soljson.js
@@ -95,13 +95,13 @@ jobs:
 
     if: "needs.build-emscripten-nightly.outputs.nightly-already-exists == 'false'"
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
         with:
           repository: 'argotorg/solidity'
           submodules: 'recursive'
 
       - name: Download soljson.js artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
         with:
           name: soljson.js
 
@@ -124,7 +124,7 @@ jobs:
 
     if: "needs.build-emscripten-nightly.outputs.nightly-already-exists == 'false'"
     steps:
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
 
       - name: Symlink solc-bin to /mnt/solc-bin
         # It's now too big to fit on the main partition on Ubuntu, which is mostly filled with software.
@@ -133,13 +133,13 @@ jobs:
           sudo chown "$USER" /mnt/solc-bin/
           ln -s /mnt/solc-bin/ solc-bin
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
         with:
           ref: ${{ env.TARGET_BRANCH }}
           path: 'solc-bin'
 
       - name: Download soljson.js artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
         with:
           name: soljson.js
 
