@@ -124,7 +124,7 @@ jobs:
 
     if: "needs.build-emscripten-nightly.outputs.nightly-already-exists == 'false'"
     steps:
-      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
 
       - name: Symlink solc-bin to /mnt/solc-bin
         # It's now too big to fit on the main partition on Ubuntu, which is mostly filled with software.
