@@ -1189,6 +1189,18 @@
       "urls": [
         "dweb:/ipfs/QmbnSQsajbSCdjYxtVzVRbZvz8kZoP4dDhPmZEiL8AA1bC"
       ]
+    },
+    {
+      "path": "solc-macosx-amd64-v0.9.0-pre.1+commit.91c99213",
+      "version": "0.9.0",
+      "prerelease": "pre.1",
+      "build": "commit.91c99213",
+      "longVersion": "0.9.0-pre.1+commit.91c99213",
+      "keccak256": "0xc5ebc38f1eee54c655584470b737446d09f9d9f2b4281dd482557a7bbab1a2b0",
+      "sha256": "0x79d4ef8b157aa83ec3a0e2a55436762e63f1324628c7db5439609534b652c149",
+      "urls": [
+        "dweb:/ipfs/QmYSBLDRHnHE1WhAan1cEKCnWXoajALBAjvmqnvX8pieTq"
+      ]
     }
   ],
   "releases": {

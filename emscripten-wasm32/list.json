@@ -1189,6 +1189,18 @@
       "urls": [
         "dweb:/ipfs/QmUbp8STNJF1dAQN8REg2VQnmFFbBTQ8REk1AgzD2Ds3zg"
       ]
+    },
+    {
+      "path": "solc-emscripten-wasm32-v0.9.0-pre.1+commit.91c99213.js",
+      "version": "0.9.0",
+      "prerelease": "pre.1",
+      "build": "commit.91c99213",
+      "longVersion": "0.9.0-pre.1+commit.91c99213",
+      "keccak256": "0x447f7f6b940bf51e6d82c6b9c22250ca7620b04feeff4c0bcba82b36c6b9ecd1",
+      "sha256": "0x9e9bf2af5ce746f09b788f3cfc70a0546e2bebabbb0cb1c0260619b3332294c7",
+      "urls": [
+        "dweb:/ipfs/QmZE7xVitBNd6uXj412MysvCTyRWU7tSqtG6vksFvwriEp"
+      ]
     }
   ],
   "releases": {
